@@ -30,6 +30,13 @@ getPicture = () => {
         .catch(error => console.error('Error fetching data:', error));
 };
 
-// 2. Use the date to get the NASA picture of the day
-// 3. Display the picture on the page
+document.getElementById('date').addEventListener('input', function() {
+    let date = new Date(this.value);
+    let minDate = new Date('1995-06-16');
+
+    if (date < minDate) {
+        alert("Please choose a date from 16th June 1995 onwards.");
+        this.value = ''; // Clear the input field
+    }
+});
 
