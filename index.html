@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="NASA picture of the day">
+    	<meta name="keywords" content="nasa, space, image, picture, photography, astronomy">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+		<title>NASA Picture of the Day</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div>
+			<img class="nasaLogo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo">
+		</div>
+
+		<h1>NASA Picture of the Day</h1>
+
+		<div class="dateContainer">
+			<p class="enterDate">Enter a date (<bold>from 16/06/1995</bold>) to see the NASA picture of the day.</p>
+			<input type="date" id="date" min="1995-06-16" value="1995-06-16"> 
+			
+			<button onclick="getPicture()">Get Picture</button>
+		</div>
+
+		<div class="marsWeatherContainer">
+			<p class="enterDate">Get the latest Mars weather: average temperature, wind, and pressure from NASA's InSight data.</p>
+			<button onclick="getMarsWeather()">Get Mars Weather</button>
+		</div>
+		<h3 id="marsWeather"></h3>
+
+		<h2 id="title"></h2>
+		<div id="media"></div>
+		<p id="explanation"></p>
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>

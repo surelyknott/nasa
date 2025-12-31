@@ -1,0 +1,127 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  margin: 30px;
+  min-height: 100vh;
+  background: radial-gradient(circle at 120%, #333, #333 57%, #f6d0ae 76%, #333 79%);
+}
+
+p{
+  display: block;
+}
+
+.enterDate {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+button, input {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 5px;
+  padding: 5px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 70px;
+}
+
+.nasaLogo{
+  width: 200px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+h1{
+  text-align: center;
+  margin: 10px;
+  font-size: 48px;
+  color: whitesmoke;
+}
+
+h2{
+  font-size: 36px;
+  margin: 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+h3{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#explanation {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0 70px;
+  color: whitesmoke;
+}
+
+.dateContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 83%;
+  justify-content: center;
+  padding: 20px 70px;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.marsWeatherContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 83%;
+  justify-content: center;
+  padding: 0 70px 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.video-container {
+  position: relative;
+  /* width: 100%; */
+  margin: 25px 70px;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2{
+  font-family: "Audiowide", sans-serif;
+}
